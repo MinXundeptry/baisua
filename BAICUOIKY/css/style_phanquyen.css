@@ -1,0 +1,23 @@
+/* Tùy chỉnh khung bảng */
+.table-vaitro { 
+    background: white; 
+    border-radius: 10px; 
+    overflow: hidden; 
+}
+
+/* Định dạng các huy hiệu vai trò */
+.role-badge { 
+    width: 100px; 
+    display: inline-block; 
+    text-align: center; 
+    font-weight: 500;
+}
+
+/* Hiệu ứng khi chọn CLB */
+.clb-select-box {
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+    margin-top: 10px;
+}

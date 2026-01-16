@@ -1,0 +1,32 @@
+/* 1. Thiết lập trạng thái ẩn ban đầu mượt mà hơn */
+    .accordion-collapse {
+        display: block !important; 
+        max-height: 0;             
+        overflow: hidden;         
+        opacity: 0;               
+        transition: max-height 2s ease, opacity 0.5s ease;
+    }
+
+/* 2. Khi di chuột vào Item: Bung chiều cao và hiện rõ nội dung */
+.accordion-item:hover .accordion-collapse {
+    max-height: 500px;        
+    opacity: 1;               
+}
+
+/* 3. Đổi màu tiêu đề khi rê chuột vào */
+.accordion-item:hover .accordion-button {
+    color: #0d6efd;
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease;
+}
+
+/* 4. Xoay mũi tên mượt mà hơn */
+.accordion-item:hover .accordion-button::after {
+    transform: rotate(-180deg);
+    transition: transform 0.5s ease;
+}
+
+/* Bỏ viền xanh khi click */
+.accordion-button:focus {
+    box-shadow: none;
+}

@@ -1,0 +1,192 @@
+/* Reset & Base */
+:root {
+    --primary: #4361ee;
+    --secondary: #3f37c9;
+    --accent: #4cc9f0;
+    --text-dark: #2b2d42;
+    --bg-light: #f8f9fc;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-dark);
+    background-color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, rgba(67, 97, 238, 0.9) 0%, rgba(58, 12, 163, 0.9) 100%), 
+    url('https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=2000&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+    margin-bottom: -50px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    opacity: 0.9;
+}
+
+/* Module Grid Section */
+.modules-section {
+    padding: 100px 0;
+    background-color: var(--bg-light);
+}
+
+.module-card {
+    background: white;
+    border: none;
+    border-radius: 20px;
+    padding: 40px 30px;
+    transition: all 0.3s ease;
+    height: 100%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.module-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(67, 97, 238, 0.15);
+}
+
+.module-icon {
+    width: 70px;
+    height: 70px;
+    background: rgba(67, 97, 238, 0.1);
+    color: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin: 0 auto 25px;
+}
+
+/* Section Headers */
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-header h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.section-header .line {
+    width: 80px;
+    height: 4px;
+    background: var(--primary);
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+/* News Section Preview */
+.news-card {
+    border-radius: 15px;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.news-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Custom Button */
+.btn-custom {
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-primary-custom {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+}
+
+.btn-primary-custom:hover {
+    background-color: var(--secondary);
+    transform: scale(1.05);
+    color: white;
+}
+/* Hiệu ứng zoom cho Card khi di chuột vào */
+.card-hover {
+    transition: transform 0.3s ease, shadow 0.3s ease;
+}
+.card-hover:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+}
+.hero {
+    background: linear-gradient(135deg, #0d6efd 0%, #0dcaf0 100%);
+    color: white;
+    padding: 100px 0;
+}
+.btn-glow:hover {
+    box-shadow: 0 0 20px rgba(255,255,255,0.4);
+}
+
+/* Nâng cấp Card Sự Kiện */
+.event-card {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    background: #fff;
+}
+
+.event-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1) !important;
+}
+
+/* Hiệu ứng dải màu cho phần chứa ngày tháng */
+.event-date-box {
+    background: linear-gradient(45deg, #0dcaf0, #0d6efd);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 12px;
+    text-align: center;
+    min-width: 65px;
+}
+
+.event-date-box .day {
+    font-size: 1.4rem;
+    font-weight: 800;
+    display: block;
+    line-height: 1;
+}
+
+.event-date-box .month {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* Tag Câu lạc bộ */
+.club-tag {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 6px 12px;
+    background: rgba(13, 202, 240, 0.1);
+    color: #0aa2c0;
+    border-radius: 50px;
+}

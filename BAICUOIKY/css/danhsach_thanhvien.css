@@ -1,0 +1,82 @@
+/* --- TỔNG THỂ CARD --- */
+.card-hover {
+    transition: all 0.3s ease-in-out;
+    border: 1px solid rgba(0,0,0,0.1) !important;
+    border-radius: 15px !important;
+    background-color: #ffffff !important; 
+    overflow: hidden;
+}
+
+.card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(216, 27, 27, 0.1) !important;
+    border-color: #d81b1b !important;
+}
+
+/* --- FIX LỖI TÀNG HÌNH: NỀN ĐỎ CHỮ TRẮNG --- */
+.clb-badge-custom {
+    background-color: #d81b1b !important; /* Đỏ đậm đồng bộ */
+    color: #ffffff !important;            /* CHỮ TRẮNG TINH BUỘC PHẢI HIỂN THỊ */
+    font-weight: 700 !important;
+    font-size: 0.75rem !important;
+    text-transform: uppercase !important;
+    padding: 0.5rem 1rem !important;
+    border-radius: 50px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    box-shadow: 0 2px 4px rgba(216, 27, 27, 0.2);
+    line-height: 1.2 !important;
+}
+
+.clb-badge-custom i {
+    color: #ffffff !important;
+    margin-right: 6px !important;
+    font-size: 0.85rem !important;
+}
+
+/* --- THÔNG TIN THÀNH VIÊN --- */
+.avatar-circle {
+    width: 65px;
+    height: 65px;
+    background: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 10px auto 15px;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.ban-highlight {
+    color: #d81b1b !important;
+    font-weight: 800;
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+}
+
+.badge.bg-light.text-dark {
+    background-color: #f8f9fa !important;
+    color: #212529 !important;
+    border: 1px solid #dee2e6 !important;
+    font-weight: 600;
+}
+
+/* --- PHÂN TRANG --- */
+.pagination .page-link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50% !important;
+    margin: 0 3px;
+    color: #d81b1b;
+    border: 1px solid #dee2e6;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #d81b1b !important;
+    border-color: #d81b1b !important;
+    color: #fff !important;
+}

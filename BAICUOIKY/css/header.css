@@ -1,0 +1,70 @@
+:root {
+    --primary-color: #4361ee;
+    --secondary-color: #3f37c9;
+    --bg-light: #f8f9fc;
+}
+        
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-light);
+    color: #2b2d42;
+}
+
+/* Navbar hiện đại */
+.navbar {
+    background: #ffffff !important;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: var(--primary-color) !important;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-link {
+    color: #4a4e69 !important;
+    font-weight: 500;
+    padding: 8px 16px !important;
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--primary-color) !important;
+    background: rgba(67, 97, 238, 0.08);
+}
+
+ /* Card Style cho Dashboard */
+.stat-card {
+    border: none;
+    border-radius: 16px;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.icon-box {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Badge phân quyền */
+.role-badge {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
