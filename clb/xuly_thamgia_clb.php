@@ -4,7 +4,7 @@ include '../connect.php';
 
 // 1. Kiểm tra đăng nhập
 if (!isset($_SESSION['username'])) {
-    echo "<script>alert('Vui lòng đăng nhập!'); window.location.href='../dangnhap.php';</script>";
+    echo "<script>alert('Vui lòng đăng nhập!'); window.location.href='../login/dangnhap.php';</script>";
     exit();
 }
 
@@ -29,14 +29,6 @@ $id_nguoidung = $user_data['id'];
 if (isset($_POST['btnGoiDon'])) {
     // Kiểm tra xem đã gửi yêu cầu chưa
     $check = $conn->query("SELECT * FROM dangkyclb WHERE id_taikhoan = '$id_nguoidung' AND id_clb = '$id_clb'");
-
-    if ($check && $check->num_rows > 0) {
-        echo "<script>alert('Bạn đã gửi yêu cầu cho CLB này rồi!'); window.location.href='../dashboard.php?id_clb=$id_clb';</script>";
-        exit();
-    } else {
-        $sql = "INSERT INTO dangkyclb (id_taikhoan, id_clb, ngay_dang_ky, trang_thai) 
-                VALUES ('$id_nguoidung', '$id_clb', NOW(), 'Chờ duyệt')";
-        
         if ($conn->query($sql) === TRUE) {
             echo "<script>alert('Gửi đơn đăng ký thành công! Vui lòng chờ duyệt.'); window.location.href='../dashboard.php?id_clb=$id_clb';</script>";
             exit();
@@ -44,7 +36,7 @@ if (isset($_POST['btnGoiDon'])) {
             $error = "Lỗi: " . $conn->error;
         }
     }
-}
+
 
 include '../header.php';
 ?>

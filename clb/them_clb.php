@@ -1,14 +1,8 @@
 <?php 
-include 'header.php'; 
-include 'connect.php'; 
+include '../header.php'; 
+include '../connect.php'; 
 
-// Kiểm tra quyền Admin (Chỉ admin mới được thêm CLB)
-if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
-    echo "<script>alert('Bạn không có quyền thực hiện thao tác này!'); window.location.href='index.php';</script>";
-    exit();
-}
-
-if (isset($_POST['btnThemCLB'])) {
+if (isset($_POST['btnThemCLB'])) {  
     $ten_clb = mysqli_real_escape_string($conn, $_POST['ten_clb']);
     $mota = mysqli_real_escape_string($conn, $_POST['mota']);
     // Lấy link ảnh từ mạng

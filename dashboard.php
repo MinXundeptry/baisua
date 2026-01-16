@@ -99,7 +99,7 @@ include 'header.php';
             
             <?php if ($is_manager_power): ?>
                 <div class="col-lg-4 col-md-6">
-                    <a href="event/duyet_dangky_clb.php?id_clb=<?= $id_clb ?>" class="text-decoration-none text-dark">
+                    <a href="clb/duyet_dangky_clb.php?id_clb=<?= $id_clb ?>" class="text-decoration-none text-dark">
                         <div class="card card-custom shadow-sm p-4 text-center">
                             <div class="icon-circle bg-warning bg-opacity-10 text-warning fs-2"><i class="bi bi-person-check-fill"></i></div>
                             <h4 class="fw-bold">Duyệt Thành Viên</h4>
@@ -164,7 +164,7 @@ include 'header.php';
                                 <p class="text-muted small">Vui lòng chờ ban chủ nhiệm phê duyệt yêu cầu của bạn.</p>
                             </div>
                         <?php else: ?>
-                            <a href="event/xuly_thamgia_clb.php?id_clb=<?= $id_clb ?>" class="text-decoration-none text-dark">
+                            <a href="clb/xuly_thamgia_clb.php?id_clb=<?= $id_clb ?>" class="text-decoration-none text-dark">
                                 <div class="card card-custom shadow-sm p-4 text-center">
                                     <div class="icon-circle bg-info bg-opacity-10 text-info fs-2"><i class="bi bi-pencil-square"></i></div>
                                     <h4 class="fw-bold">Đăng Ký Tham Gia</h4>

@@ -73,7 +73,7 @@ include 'connect.php';
 
             <?php if (isset($_SESSION['role']) && $_SESSION['role'] == 'admin'): ?>
                 <div class="mb-4">
-                    <a href="them_clb.php" class="btn btn-success rounded-pill px-4 shadow-sm">
+                    <a href="clb/them_clb.php" class="btn btn-success rounded-pill px-4 shadow-sm">
                         <i class="bi bi-plus-circle me-2"></i>Thêm CLB Mới
                     </a>
                 </div>
